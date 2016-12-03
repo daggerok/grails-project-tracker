@@ -11,6 +11,13 @@
 <body>
 <div>${message}</div>
 <hr>
-<div>all projects: ${allProjects}</div>
+<g:if test="${allProjects.size() > 0}">
+    <div>all projects:</div>
+    <ul>
+        <g:each in="${allProjects}" status="i" var="project">
+            <li>${project.message}</li>
+        </g:each>
+    </ul>
+</g:if>
 </body>
 </html>
