@@ -10,5 +10,7 @@
 
 <body>
 <div>${message}</div>
+<hr>
+<div>all projects: ${allProjects}</div>
 </body>
 </html>
